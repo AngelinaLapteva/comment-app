@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+Please note, there is no usage of libraries like Bootstrap and etc.,that was intentional to demonstrate the skills without helpers. 
 ## Available Scripts
 
 In the project directory, you can run:
