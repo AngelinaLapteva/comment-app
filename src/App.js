@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Comment from '../src/components/shared/comment-component/CommentComponent'
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { comments } from '../src/components/shared/mock-data/mockComments'
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {comments}
+  }
+  containerLevelFunction = () => {
+    console.log('you are on container level')
+  }
+  render() {
+    return (
+      <div className="App">
+        <Comment comments={this.state.comments} clicked={this.containerLevelFunction}/>
+      </div>
+    );
+  }
 }
 
 export default App;

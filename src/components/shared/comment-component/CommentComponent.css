@@ -1,0 +1,11 @@
+
+.commentWrapper {
+    margin: 20px;
+}
+.commentWrapper:hover .hoverComment {
+    color: #232324;
+}
+.iconXs {
+    font-size: 2px;
+    line-height: 25px;
+}

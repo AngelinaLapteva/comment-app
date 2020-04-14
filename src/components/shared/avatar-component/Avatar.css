@@ -1,0 +1,5 @@
+.Avatar {
+    width: auto;
+    height: 40px;
+    clip-path: circle(20px at center);
+  }

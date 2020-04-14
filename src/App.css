@@ -1,38 +1,67 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.colorRed {
+  color: red;
+}
+.marginY0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.uppercaseText {
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rowView {
+  display: flex;
+  flex-direction: row;
+  line-height: 25px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.centerAligned {
+  align-items: center;
+}
+.columnView {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.paddingXRegular {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paddingXsm {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.lightGrey {
+  color: #BBC1C9;
+}
+.mediumGrey {
+  color: #8E9399;
+}
+.darkGrey {
+ color:#4D4E4F;
+}
+.boldText {
+  font-weight: 600;
+}
+.smallFont {
+  font-size: 11px;
+  line-height: 25px;
+}
+.regularFont {
+  font-size: 14px;
+}
+.tagStyle {
+  background-color: #4D4E4F;
+  color:white;
+  border-radius: 25px;
+  padding: 2px 8px 2px 8px;
+  
+}
+.pointer {
+  cursor: pointer;
+}
+.mb1 {
+  margin-bottom: 10px;
 }
