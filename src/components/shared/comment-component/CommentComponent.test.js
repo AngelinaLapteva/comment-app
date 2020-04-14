@@ -22,13 +22,35 @@ const comments = [
         commentText: 'So what the German automaker is likely to focus on today is the bigger picture. This will be the first time we see the Taycan free from prototype bodyworks.'
     }
 ]
+const commentsTest2 = [
+    {
+        id: 'dji7492ds',
+        authorName: 'TestName',
+        type: 'author',
+        timeStamp: '2 minutes ago',
+        amountOfReplies: 1,
+        upCount: 123,
+        downCount: 0,
+        avatarPath: '/img/catAvatr.png',
+        commentText: 'So what the German automaker is likely to focus on today is the bigger picture. This will be the first time we see the Taycan free from prototype bodyworks.'
+    }
+]
 
 describe(' Comment  component', () => {
-    test('renders comment component', () => {
+    test('renders comment component with multiple replies', () => {
 
         const { getByText } = render(<CommentComponent comments={comments} />);
         const linkElement = getByText(/TestName/i);
+        const replies = getByText(/replies/i);
         expect(linkElement).toBeInTheDocument();
+        expect(replies).toBeInTheDocument();
+    });
+
+    test('renders comment component with one reply', () => {
+
+        const { getAllByText } = render(<CommentComponent comments={commentsTest2} />);
+        const replies = getAllByText(/reply/i);
+        expect(replies).toHaveLength(2);
     });
     test('check the snapshot', () => {
         const component = renderer.create(
