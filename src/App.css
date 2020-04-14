@@ -43,7 +43,7 @@
  color:#4D4E4F;
 }
 .boldText {
-  font-weight: 600;
+  font-weight: 700;
 }
 .smallFont {
   font-size: 11px;
@@ -57,6 +57,8 @@
   color:white;
   border-radius: 25px;
   padding: 2px 8px 2px 8px;
+  font-size: 10px;
+  font-weight: 700;
   
 }
 .pointer {

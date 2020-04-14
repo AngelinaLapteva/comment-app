@@ -30,7 +30,7 @@ const commentComp = props => {
                             </div>
                         </div>
                         <p className="marginY0 mb1">{comment.commentText}</p>
-                        <div className="rowView mb1">
+                        <div className="rowView">
                             <div className="uppercaseText lightGrey smallFont hoverComment pointer"
                                 onClick={clickOnReply}>reply</div>
                             <div className="uppercaseText lightGrey smallFont paddingXRegular hoverComment pointer"
