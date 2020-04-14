@@ -40,11 +40,13 @@ const commentComp = props => {
                                 </span>
                                 {replyText}
                             </div>
-                            <div className="uppercaseText lightGrey smallFont paddingXRegular rowView centerAligned hoverComment pointer">
+                            <div className="uppercaseText lightGrey smallFont paddingXRegular rowView centerAligned hoverComment pointer"
+                                onClick={props.clicked}>
                                 <FontAwesomeIcon className="regularFont paddingXsm" icon={faChevronUp} />
                                 {comment.upCount}
                             </div>
-                            <div className="uppercaseText lightGrey smallFont paddingXRegular rowView centerAligned hoverComment pointer">
+                            <div className="uppercaseText lightGrey smallFont paddingXRegular rowView centerAligned hoverComment pointer"
+                                onClick={props.clicked}>
                                 <FontAwesomeIcon className="regularFont paddingXsm" icon={faChevronDown} />
                                 {comment.downCount}
                             </div>
